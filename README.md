@@ -36,9 +36,9 @@ NOTE: If you want remote access, you'll need to setup a tinc VPN network. Detail
 	1. Copy tinc tarball from my workstation (using this as a template). Usually, this means using scp. Even though you're on the same physcial machine, since you're chroot'ed into the Clonezilla directory, it's easiest to use scp to get files from your main installation into this chroot'ed one.
 	2. Remove my workstation private key (/etc/tinc/webservices/rsa_priv.key). No reason to distribute this!
 	3. Regenerate keys using tincd -K
-		1.) put private key in /etc/tinc/webservices/rsa_key.priv
-		1.) put public key in /etc/tinc/webservices/hosts/[computername]
-		1.) Copy the public key for this new computer to root@web-services.highpoweredhelp.com:/etc/tinc/webservices/hosts/ (this is my central connection point for my tinc VPN service. You would need to setup your own)
+	1.) put private key in /etc/tinc/webservices/rsa_key.priv
+	1.) put public key in /etc/tinc/webservices/hosts/[computername]
+	1.) Copy the public key for this new computer to root@web-services.highpoweredhelp.com:/etc/tinc/webservices/hosts/ (this is my central connection point for my tinc VPN service. You would need to setup your own)
 	4. Edit the newly generated key to add the name and IP address. 
 	5. Change the Name value in /etc/tinc/webservices/tinc.conf to [computername]
 	6. Change the IP address in tinc-up
