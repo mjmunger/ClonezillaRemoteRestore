@@ -158,12 +158,18 @@ umount $TMPDIRO
 cd $TMPDIRN/live
 unsquashfs filesystem.squashfs
 
+echo ""
 echo "Now edit any part of clonezilla live-cd in ${TMPDIRN}/live/squashfs-root/"
+echo ""
+echo "This would be the proper time to chroot to ${TMPDIRN}/live/squashfs-root/ in a separate terminal."
 echo ""
 echo "If you have previously created a remastered disc, and would like to restore"
 echo "a tar ball, now would be the time to do it!"
 echo ""
 echo "If you used the (deprecated) -b option, place an empty CD or CD/RW in the drive."
+echo ""
+echo "When you're done, type 'exit', and this will create your ISO."
+echo ""
 
 #Take you to the root!
 cd $TMPDIRN/live/squashfs-root/
