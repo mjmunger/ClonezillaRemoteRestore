@@ -48,8 +48,8 @@ NOTE: If you want remote access, you'll need to setup a tinc VPN network. Detail
 	WARNING: This also assumes that we're using eth0. That means you need to instruct your clients / employees to connect to the router / switch / whatever with an ethernet cable. NO WIRELESS IS SUPPORTED.
 
 8. Ensure the tun driver is loaded: add 'tun' to /etc/modules on its own line.
-9. apt-get install chkconfig
-10. Make sure that ssh starts on boot: 'chkconfig ssh on'
+9. (REMOVED)
+10. Make sure that ssh starts on boot: 'update-rc.d ssh enable'
 11. Ctrl+D to exit chroot
 12. BACKUP what you just did:
 	cd /tmp/
